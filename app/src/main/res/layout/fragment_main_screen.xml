@@ -1,0 +1,62 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".views.activities.LoginActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_Margin"
+
+
+        android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_Margin"
+    android:textSize="@dimen/BoldtextSize"
+    android:text="@string/sortby"
+  />  >
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/sortSpinner"
+            sortListItems="@{viewModel.sortListData}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinnerheight"
+            android:layout_marginTop="@dimen/default_Margin"
+            android:textColor="@color/white"
+            app:ms_background_color="@color/colorPrimaryDark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:id="@+id/search_resturant_edittext"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/default_Margin"
+            android:hint="@string/searchResturants"
+            android:background="@drawable/roundedittext" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/default_Margin"
+            app:setAdapter="@{viewModel.getRecycleAdapter()}" />
+
+
+    </LinearLayout>
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.takeaway.viewmodel.MainScreenViewModel" />
+
+    </data>
+</layout>

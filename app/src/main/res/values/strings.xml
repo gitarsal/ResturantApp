@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TakeAwayApplication</string>
+    <string name="minCost">minCost %s</string>
+    <string name="rating">rating %s</string>
+    <string name="distance">distance %s</string>
+    <string name="minimumCostSortValue">Minimum Cost</string>
+    <string name="ratingSortValue">Rating</string>
+    <string name="distanceSortValue">Distance</string>
+    <string name="deliveryCostsSortValue">Delivery Cost</string>
+    <string name="PopularitySortValue">Popularity</string>
+    <string name="averageProductPriceSortValue">Average Product Price</string>
+    <string name="newestSortValue">Newest</string>
+    <string name="bestmatchtSortValue">Best Match</string>
+
+    <string name="deliveryCosts">Delivery Cost : %s</string>
+    <string name="Popularity">Popularity : %s</string>
+    <string name="averageProductPrice">Average Product Price : %s</string>
+    <string name="newest">Newest : %s</string>
+    <string name="bestmatch">Best Match : %s</string>
+    <string name="status">Status : %s</string>
+
+
+    <string name="searchResturants">Search Restaurants</string>
+    <string name="sortby">Sort By</string>
+    <string name="addToFav">Add to Favourite</string>
+    <string name="RemoveFromfav">Favourite</string>
+
+
+</resources>

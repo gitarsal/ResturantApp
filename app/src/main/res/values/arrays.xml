@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="sortList">
+        <item>@string/bestmatchtSortValue</item>
+        <item>@string/distanceSortValue</item>
+        <item>@string/newestSortValue</item>
+        <item>@string/PopularitySortValue</item>
+        <item>@string/ratingSortValue</item>
+        <item>@string/deliveryCostsSortValue</item>
+        <item>@string/minimumCostSortValue</item>
+        <item>@string/averageProductPriceSortValue</item>
+
+    </array>
+
+</resources>
